@@ -1,3 +1,21 @@
 :root{
     border:2px solid black;
 }
+
+body{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.header{
+    border:2px solid green;
+}
+
+.sidebar{
+    border:2px solid yellow;
+}
+
+.content{
+    border:2px solid orange;
+}
