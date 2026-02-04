@@ -2,7 +2,7 @@
 body{
     display:grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;
     padding:0px;
     margin:0px;
 }
@@ -11,7 +11,9 @@ body{
 .header{
     display:grid;
     grid-column: 2/3;
-    grid-template-rows: 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    padding:0px;
+    margin:0px;
 }
 
 .sidebar{
@@ -34,14 +36,14 @@ body{
 
 .header-top-row{
     display: grid;
-    grid-template-columns: 4fr 1.25fr;
-    align-items: center;
-    height: 50px;
+    grid-template-columns: 4fr 1.1fr;
+    padding:0px;
 }
 
 .header-bottom-row{
     display:grid;
     grid-template-columns: 4fr 1.5fr;
+    align-items: center;
 }
 
 .sidebar > .left{
@@ -88,16 +90,29 @@ body{
 /* Third level grid divisions */
 
 .header-top-search{
-
+    display:grid;
+    grid-template-columns:1fr 30fr;
+    align-content: center;
+    padding:20px;
 }
 
 .header-top-profile{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding:20px;
+    font-weight: 600;
+    font-size: larger;
 }
 
 .header-bottom-greeting{
-
+    align-items: center;
+    align-content: center;
+    grid-column: 1/2;
+    display:grid;
+    grid-template-columns: 1fr 7fr;
+    padding-left:20px;
+    margin:0px;
+    font-weight: 600;
 }
 
 .header-bottom-buttons{
@@ -110,20 +125,22 @@ body{
 
 /* Fourth level grid divisions */
 
+    /* Header*/
 .search-image{
-
+    align-self: center;
+    align-self: center;
+    padding-left: 20px;
 }
 
 .search-input{
+    align-self: center;
     width:40vw;
     height:25px;
     background-color: lightgray;
     border:none;
     border-radius: 15px;
-}
-
-.header-bottom-profile-picture{
-
+    padding:0px;
+    margin:20px;
 }
 
 .alerts{
@@ -131,8 +148,27 @@ body{
     align-content: center;
 }
 
-.greeting{
+.profile-picture{
+    align-self: center;
+}
 
+.name{
+    align-self: center;
+}
+
+
+
+
+.header-bottom-profile-picture{
+    grid-column: 1/2;
+    display:grid;
+    padding:20px
+}
+
+.greeting{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 2/3;
 }
 
 .header-bottom-buttons{
@@ -149,9 +185,11 @@ body{
 
 
 
+.hi{
 
-.hi, .name-link{
-    
+} 
+.name-link{
+    font-size: x-large;    
 }
 
 
@@ -171,4 +209,9 @@ body{
 .home{
     color:white;
     filter: invert(100%) sepia(0%) saturate(7493%) hue-rotate(352deg) brightness(101%) contrast(102%);
+}
+
+input{
+    margin:0px;
+    padding:0px;
 }
