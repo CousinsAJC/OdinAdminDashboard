@@ -9,16 +9,21 @@
 <body>
 
     <div class="header">
-        <div class="header-top">
-            <div class="search"><div></div><input type="text"></div>
+        <div class="header-top-row">
+            <div class="header-top-search">
+                <img class="search-image" src="icons/magnify.svg" width="30px" type="text">
+                <input class="search-input" type="text">
+            </div>
+
             <div class="header-top-profile">
-                <div class="alerts"></div>
+                <div class="alerts"><img src="icons/bell.svg" width="30px"></div>
                 <div class="profile-picture"></div>
                 <div class="name">John Doe</div>
             </div>
         </div>
 
-        <div class="header-bottom">
+
+        <div class="header-bottom-row">
             <div class="header-botom-greeting">
                 <div class="header-bottom-profile-picture"></div>
                 <div class="greeting">
@@ -26,7 +31,7 @@
                     <div class="name-link">John Doe (@johnd)</div>
                 </div>
             </div>
-            <div class="header-buttons">
+            <div class="header-bottom-buttons">
                 <div class="new-button"><button>New</button></div>
                 <div class="upload-button"><button>Upload</button></div>
                 <div class="share-button"><button>Share</button></div>
@@ -37,25 +42,54 @@
 
 
     <div class="sidebar">
-        <div class="dash"><div></div><h1>Dashboard</h1></div>
-        
-        <div class="home"><div></div><h2>Home</h2></div>
-        <div class="profile"><div></div><h2>Profile</h2></div>
-        <div class="messages"><div></div><h2>Messages</h2></div>
-        <div class="history"><div></div><h2>History</h2></div>
-        <div class="tasks"><div></div><h2>Tasks</h2></div>
-        <div class="communities"><div></div><h2>Communities</h2></div>
+        <div class="left">
+            <div class="home-one">
+                <img class="home" src="icons/home.svg" width="30px">
+            </div>
+            
+            <div class="home-two">
+                <img class="home" src="icons/home.svg" width="30px">
+                <img class="home" src="icons/home.svg" width="30px">
+                <img class="home" src="icons/home.svg" width="30px">
+                <img class="home" src="icons/home.svg" width="30px">
+                <img class="home" src="icons/home.svg" width="30px">
+                <img class="home" src="icons/home.svg" width="30px">
+            </div>
+            
+            <div class="home-three">
+                <img class="home" src="icons/home.svg" width="30px">
+                <img class="home" src="icons/home.svg" width="30px">
+                <img class="home" src="icons/home.svg" width="30px">
+            </div>
+        </div>
 
-        <div class="settings"><div></div><h2>Settings</h2></div>
-        <div class="support"><div></div><h2>Support</h2></div>
-        <div class="privacy"><div></div><h2>Privacy</h2></div>
+        <div class="right">
+            <div class="home-one">
+                <h1>Dashboard</h1>
+            </div>
+
+            <div class="home-two">
+                <h2>Home</h2>
+                <h2>Profile</h2>
+                <h2>Messages</h2>
+                <h2>History</h2>
+                <h2>Tasks</h2>
+                <h2>Communities</h2>
+            </div>
+
+            <div class="home-three">
+                <h2>Settings</h2>
+                <h2>Support</h2>
+                <h2>Privacy</h2>
+            </div>
+        </div>
     </div>
 
     <div class="content">
         <h1>Your Projects</h1>
         <h1>Announcements</h1>
         <h1>Trending</h1>
-        
+
         <div class="card">
             <div class="card-content">
                 <h2>Super Cool Project</h2>
